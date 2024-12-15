@@ -1,7 +1,5 @@
 # Swiss Jekyll Theme
 
-[![Gem Version](https://badge.fury.io/rb/jekyll-swiss.svg)](https://badge.fury.io/rb/jekyll-swiss)
-
 Swiss is a bold Jekyll theme inspired by Swiss design and the works of Massimo Vignelli. This theme lends itself well to sites heavy on written content.
 
 ### Features:
@@ -29,9 +27,35 @@ And then execute:
 
     $ bundle
 
+### What is this fork?
+
+This is a fork where you can add your own colors to the theme.
+
+You can customize the theme colors in two ways:
+
+1. Using predefined themes by setting `theme_color` in your `_config.yml`:
+
+```yaml
+theme_color: custom # Choose from: black, blue, gray, magenta, orange, red, white, yellow, or custom
+```
+
+2. Using custom colors by setting the following in your `_config.yml`:
+
+```yaml
+color_background: "#2E86AB"
+color_dot_accent: "#F6B042"
+color_foreground: "#9C27B0"
+color_title: "#E74C3C"
+color_body_text: "#2ECC71"
+color_text_accent: "#8E44AD"
+color_code: "#F39C12"
+color_nav_link: "#16A085"
+color_primary_link: "#C0392B"
+```
+
 ## Usage
 
-This theme comes in eight different color variations. The default is set to the black theme, to change to a different theme edit the config under `theme_color: black` to one of the following colors:
+The original theme comes in eight different color variations. The default is set to the black theme, to change to a different theme edit the config under `theme_color: black` to one of the following colors:
 
 |                                                                                                                                          |                                                                                                                                          |
 |:-----------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
@@ -46,7 +70,7 @@ This theme comes in eight different color variations. The default is set to the 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/broccolini/swiss. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at the original repo at https://github.com/broccolini/swiss. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 

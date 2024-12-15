@@ -26,8 +26,19 @@ social_link: twitter
 social_username: jekyllrb
 
 # Set theme color here
-# Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow.
+# Choose from: black (default), blue, gray, magenta, orange, red, white, yellow or custom.
 theme_color: black
+
+# colors for custom theme
+color_background: "#2E86AB"
+color_dot_accent: "#F6B042"
+color_foreground: "#9C27B0"
+color_title: "#E74C3C"
+color_body_text: "#2ECC71"
+color_text_accent: "#8E44AD"
+color_code: "#F39C12"
+color_nav_link: "#16A085"
+color_primary_link: "#C0392B"
 
 # Build settings
 markdown: kramdown

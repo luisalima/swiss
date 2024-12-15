@@ -3,7 +3,18 @@
 ---
 @charset "utf-8";
 
-// Import partials from `sass_dir` and set theme here
-@import
-        "theme-{{ site.theme_color | default: "black" }}.scss"
-;
+// import custom theme colors
+:root {
+  --color-background: {{ site.color_background | default: "#000000" }};
+  --color-dot-accent: {{ site.color_dot_accent | default: "#666666" }};
+  --color-foreground: {{ site.color_foreground | default: "#333333" }};
+  --color-title: {{ site.color_title | default: "#FF0000" }};
+  --color-body-text: {{ site.color_body_text | default: "#FF0000" }};
+  --color-text-accent: {{ site.color_text_accent | default: "#FF0000" }};
+  --color-code: {{ site.color_code | default: "#FF0000" }};
+  --color-nav-link: {{ site.color_nav_link | default: "#FF0000" }};
+  --color-primary-link: {{ site.color_primary_link | default: "#FF0000" }};
+}
+
+// Import custom theme if colors are set, otherwise use default theme
+@import "theme-{{ site.theme_color | default: "black" }}.scss";

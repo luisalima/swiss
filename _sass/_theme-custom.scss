@@ -1,0 +1,33 @@
+// Custom theme with configurable colors
+
+// Color variables
+$black: #181818;
+$red: #E74727;
+$red-dark: #DC3918;
+$blue: #009DDB;
+$blue-small: #007AB3;
+$gray: #45474A;
+$white: #fff;
+
+// Config
+$color-background: var(--color-background) !default;
+$color-dot-accent: var(--color-dot-accent) !default;
+$color-foreground: var(--color-foreground) !default;
+$color-title: var(--color-title) !default;
+$color-body-text: var(--color-body-text) !default;
+$color-text-accent: var(--color-text-accent) !default;
+$color-code: var(--color-code) !default;
+$color-nav-link: var(--color-nav-link) !default;
+$color-primary-link: var(--color-primary-link) !default;
+
+.font-smoothing {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+// Import sass partials (used in all themes)
+@import
+        "variables",
+        "base",
+        "components",
+        "utilities";
